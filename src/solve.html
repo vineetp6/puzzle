@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Solve Puzzle</title>
+    <script>
+      function submitAnswer() {
+        const userAnswer = document.getElementById('answerInput').value;
+        const correctAnswer = "example"; // Replace with backend data retrieval logic.
+
+        if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+          alert('Correct! 🎉');
+        } else {
+          alert('Wrong answer! Try again.');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Solve the Puzzle</h1>
+    <p>Puzzle: Solve me if you can!</p>
+    <textarea id="answerInput" placeholder="Enter your answer..."></textarea>
+    <button onclick="submitAnswer()">Submit Answer</button>
+  </body>
+</html>
